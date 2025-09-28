@@ -8,6 +8,8 @@ import helpmenu
 import utilites
 import pg_generator
 import dice
+import pymysql
+pymysql.install_as_MySQLdb()
 pymysql.install_as_MySQLdb()
 import MySQLdb
 
