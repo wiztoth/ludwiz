@@ -8,6 +8,8 @@ import helpmenu
 import utilites
 import pg_generator
 import dice
+pymysql.install_as_MySQLdb()
+import MySQLdb
 
 token = token
 # bot initalization!
