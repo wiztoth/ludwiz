@@ -1,14 +1,17 @@
-token = 'YOUR TOKEN FOR DISCORD BOT'
+import os
+from dotenv import load_dotenv
 
-db_host = 'YOUR DATABASE HOST'
+# Carica il file .env
+load_dotenv()
+
 #spells credentials
-db_user_spell = 'YOUR DATABASE SPELL USERNAME'
-db_psw_spell = 'YOUR DATABASE SPELL PASSWORD'
-db_name_spell = 'YOUR DATABASE SPELLS NAME'
+db_user_spell = os.getenv("DB_SPELL_USER")
+db_psw_spell = os.getenv("DB_SPELL_PASS")
+db_name_spell = os.getenv("DB_SPELL_NAME")
 #weapons credentials
-db_user_weapons = 'YOUR DATABASE WEAPONS USERNAME'
-db_psw_weapons = 'YOUR DATABASE WEAPONS PASSWORD'
-db_name_weapons = 'YOUR DATABASE WEAPONS NAME'
+db_user_weapons = os.getenv("DB_WEAPONS_USER")
+db_psw_weapons = os.getenv("DB_WEAPONS_PASS")
+db_name_weapons = os.getenv("DB_WEAPONS_NAME")
 
 
 
